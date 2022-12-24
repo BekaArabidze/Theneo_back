@@ -24,8 +24,8 @@ app.use(cors({
 
 app.use("/api", api)
 
+const PORT = process.env.PORT || 5000;
 
-
-app.listen(5000, async () => {
-    console.info(`Example app listening on port ${5000}`)
+app.listen(PORT, async () => {
+    console.info(`Example app listening on port ${PORT}`)
 })
